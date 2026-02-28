@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyLynk | Real Help. Real People. Real Results.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet/styles.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="images/StudyLynkLogo_New.png" alt="StudyLynk Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a><button class="dropdown-chevron" aria-label="Toggle menu">&#9660;</button>
+        <div class="dropdown-menu">
+          <a href="services.html#pricing">Tutoring Pricing</a>
+          <a href="services.html#workshops">Workshops &amp; Courses</a>
+        </div>
+      </li>
+      <li><a href="tutors.html">About StudyLynk</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+  
+    <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <p class="hero-byline">Created by Brandon Baker</p>
+    <p class="hero-eyebrow">Bentonville, AR &nbsp;&bull;&nbsp; In Person &amp; Online</p>
+    <h1>Every student deserves<br>someone in their <em>corner.</em><br>We are <span>that person.</span></h1>
+    <p class="hero-sub">StudyLynk connects students with real tutors who have been exactly where you are. Lost, frustrated, and afraid to ask for help. We get it. And we are here to change it.</p>
+    <div class="hero-actions">
+      <a href="#" onclick="openBookingModal(event)" class="btn-primary">Book Your Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="mission-section">
+  <div class="mission-inner">
+    <div class="mission-eyebrow">Our Mission</div>
+    <blockquote class="mission-statement">
+      &ldquo;StudyLynk exists to make sure no student has to sit in silence thinking they are the only one who doesn&rsquo;t get it. We are here to build confidence, open doors, and give every student the tools and resources that carry them beyond the classroom &mdash; not just through it. Because learning is not just about the moment. It is about who you become because of it.&rdquo;
+    </blockquote>
+    <p class="mission-attr">&mdash; Brandon Scott, Founder of StudyLynk</p>
+  </div>
+</section>
+
+<section class="truth-section">
+  <div class="truth-left">
+    <h2>Most students are not<br><em>struggling</em> because<br>they are not smart.</h2>
+    <p>They are struggling because nobody has taken the time to explain it in a way that actually makes sense to them. That is the only difference between a student who gets it and one who does not. We exist to close that gap.</p>
+  </div>
+  <div class="truth-right">
+    <div class="truth-item">
+      <div class="t-icon">🎯</div>
+      <p><strong>We match you first.</strong> Before anything else we sit down with you, find out where you are, what you need, and who on our team is the right fit. No guessing.</p>
+    </div>
+    <div class="truth-item">
+      <div class="t-icon">🌐</div>
+      <p><strong>Wherever you are.</strong> In person in Bentonville or fully online anywhere in the country. The same tutors, the same quality, the same commitment either way.</p>
+    </div>
+    <div class="truth-item">
+      <div class="t-icon">🤝</div>
+      <p><strong>One on one or group.</strong> Some students need focused individual attention. Others thrive learning alongside peers. We figure out which one works for you.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how-section">
+  <div class="section-header">
+    <div class="eyebrow">How It Works</div>
+    <h2>Three steps. <em>No runaround.</em></h2>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-accent"></div>
+      <h3>Tell us where you are</h3>
+      <p>Reach out and book your free consultation. We want to hear your story: what subject, what grade, what is not clicking, and what your goals are. This conversation matters.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-accent"></div>
+      <h3>We find the right fit</h3>
+      <p>Based on what you tell us we match you with the tutor who is best suited for your needs, your learning style, and your schedule. One on one or group, in person or online.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-accent"></div>
+      <h3>You start moving forward</h3>
+      <p>No more sitting in silence. No more pretending to understand. Just real sessions with someone who genuinely wants to see you succeed and knows how to get you there.</p>
+    </div>
+  </div>
+</section>
+
+<section class="subjects-section">
+  <div class="section-header">
+    <div class="eyebrow">What We Teach</div>
+    <h2>Every subject. <em>Every student.</em></h2>
+  </div>
+  <div class="subjects-grid">
+    <div class="subject-card">
+      <div class="subject-icon">💻</div>
+      <h3>Information Technology &amp; Web Development</h3>
+      <p>From the basics of how computers work to building things on the web. Brandon leads this area from real experience in the field and in the classroom.</p>
+    </div>
+    <div class="subject-card">
+      <div class="subject-icon">✍️</div>
+      <h3>English, Writing &amp; Literature</h3>
+      <p>Grammar, essays, novels, college applications. Sarah helps students find their voice and say what they actually mean on paper.</p>
+    </div>
+    <div class="subject-card">
+      <div class="subject-icon">🔬</div>
+      <h3>Science &amp; Math</h3>
+      <p>Biology, chemistry, physics, algebra, calculus. Joseph makes the hard stuff click with real world examples and serious patience.</p>
+    </div>
+    <div class="subject-card">
+      <div class="subject-icon">📖</div>
+      <h3>History &amp; Social Studies</h3>
+      <p>U.S. history, world history, government, critical thinking. Ante teaches students to understand the why behind events, not just memorize the what.</p>
+    </div>
+    <div class="subject-card">
+      <div class="subject-icon">📊</div>
+      <h3>Business &amp; Study Skills</h3>
+      <p>Economics, organization, time management, study strategies. Christina specializes in helping students build the systems that make everything else easier.</p>
+    </div>
+    <div class="subject-card">
+      <div class="subject-icon">📚</div>
+      <h3>Reading &amp; Learning Strategies</h3>
+      <p>Comprehension, confidence, learning habits. Lance works with students who have been written off and shows them they were never the problem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="team-preview">
+  <div class="section-header">
+    <div class="eyebrow">The Team</div>
+    <h2>People who have <em>been there.</em></h2>
+  </div>
+  <div class="team-strip">
+    <div class="tutor-card">
+      <img src="images/brandonscott.JPG" alt="Brandon Scott" />
+      <div class="tutor-overlay">
+        <div class="tname">Brandon Scott</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/SarahMartinez.jpg" alt="Sarah Martinez" />
+      <div class="tutor-overlay">
+        <div class="tname">Sarah Martinez</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/josephgonzalezpg.jpg" alt="Joseph Gonzalez" />
+      <div class="tutor-overlay">
+        <div class="tname">Joseph Gonzalez</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/Christina.jpg" alt="Christina Reyes" />
+      <div class="tutor-overlay">
+        <div class="tname">Christina Reyes</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/antesamarzija.jpg" alt="Ante Samarzija" />
+      <div class="tutor-overlay">
+        <div class="tname">Ante Samarzija</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/lancereis.jpg" alt="Lance Reis" />
+      <div class="tutor-overlay">
+        <div class="tname">Lance Reis</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/MarcusStone.jpg" alt="Marcus Stone" />
+      <div class="tutor-overlay">
+        <div class="tname">Marcus Stone</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/albertdera.jpg" alt="Albert Dera" />
+      <div class="tutor-overlay">
+        <div class="tname">Albert Dera</div>
+      </div>
+    </div>
+  </div>
+  <div class="team-more"><a href="tutors.html">Click here to hear their stories &rarr;</a></div>
+</section>
+
+<section class="bosses-section">
+  <div class="section-header">
+    <div class="eyebrow">AKA The Bosses</div>
+    <h2>The real ones <em>running the show.</em></h2>
+    <p style="text-align:center; color:#C9922A; margin-top:0.5rem;">StudyLynk's official morale officers &mdash; keeping everyone on track, one tail wag at a time.</p>
+  </div>
+  <div class="team-strip bosses-strip">
+    <div class="tutor-card">
+      <img src="images/molly1.jpeg" alt="Molly" />
+      <div class="tutor-overlay">
+        <div class="tname">Molly</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/mollie-happy.jpg" alt="Mollie" />
+      <div class="tutor-overlay">
+        <div class="tname">Mollie</div>
+      </div>
+    </div>
+    <div class="tutor-card">
+      <img src="images/Cookie3.jpg" alt="Cookie" />
+      <div class="tutor-overlay">
+        <div class="tname">Cookie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="formats-section">
+  <div class="section-header">
+    <div class="eyebrow">Session Formats</div>
+    <h2>Your way. <em>Your pace.</em></h2>
+  </div>
+  <div class="formats-grid">
+    <div class="format-card">
+      <div class="format-tag">One on One</div>
+      <h3>Just you and your <em>tutor.</em></h3>
+      <p>Full attention. No distractions. Every session is built around exactly what you need that day. Ideal for students who have specific gaps, are preparing for an important exam, or simply do better with focused one on one time. Available in person or online.</p>
+      <img src="images/oneonone.jpg" alt="One on One Tutoring Session" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-top: 1rem;">
+    </div>
+    <div class="format-card">
+      <div class="format-tag">Virtual Sessions</div>
+      <h3>Learn from <em>anywhere.</em></h3>
+      <p>Online tutoring that's just as effective as in-person. Whether you're at home, at school, or traveling, we meet you where you are. Available one-on-one or in groups. Cookie is ready to help you along as well! 👓💻</p>
+      <img src="images/cookie.jpg" alt="Cookie" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-top: 1rem;">
+    </div>
+    <div class="format-card">
+      <div class="format-tag">Group Sessions</div>
+      <h3>Learn together. <em>Grow together.</em></h3>
+      <p>Small group sessions where students work through material with a tutor guiding the way. You learn from the tutor and from each other. Sometimes hearing another student ask the question you were too afraid to ask is exactly what makes it click. Available in person or online.</p>
+      <img src="images/groupclass.jpg" alt="Group Learning Session" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-top: 1rem;">
+    </div>
+  </div>
+</section>
+
+<section class="remember-section">
+  <div class="section-header">
+    <h2>Remember <em>This</em></h2>
+    <p>You are capable of more than you know. Here are some truths to carry with you.</p>
+  </div>
+  
+  <div class="quotes-grid">
+    <div class="quote-card">
+      <img src="images/quote-dreams.png" alt="The future belongs to those who believe in the beauty of their dreams">
+      <div class="quote-overlay">Dreams</div>
+    </div>
+    <div class="quote-card">
+      <img src="images/quote-improving.jpg" alt="You're improving every day, even if it's not always visible">
+      <div class="quote-overlay">Improving</div>
+    </div>
+    <div class="quote-card">
+      <img src="images/quote-churchill.png" alt="Success consists of going from failure to failure without loss of enthusiasm">
+      <div class="quote-overlay">Success</div>
+    </div>
+    <div class="quote-card">
+      <img src="images/teamlead.jpg" alt="Team Lead Succeed">
+      <div class="quote-overlay">Leadership</div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="section-header">
+    <p class="section-eyebrow">What Are the Students Saying?</p>
+    <h2>Real Students. <em>Real Results.</em></h2>
+    <p>Hear it straight from the people who showed up, put in the work, and came out the other side.</p>
+  </div>
+
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <p class="testimonial-text">I failed my first two Calc exams and honestly thought I was going to drop the class. After three sessions with StudyLynk I finally understood what derivatives actually meant. Ended the semester with a B+. I cried.</p>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #9C27B0, #4DD0E1);">JM</div>
+        <div>
+          <p class="testimonial-name">Jordan M.</p>
+          <p class="testimonial-detail">Calculus II &bull; University of Arkansas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card testimonial-card--featured">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <p class="testimonial-text">I was terrified to ask questions in class because I felt like everyone else already got it. My tutor made me feel like my questions were the smartest ones in the room. That shift changed everything for me this semester.</p>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #4DD0E1, #CE93D8);">AT</div>
+        <div>
+          <p class="testimonial-name">Aaliyah T.</p>
+          <p class="testimonial-detail">Biology 101 &bull; NorthWest Arkansas Community College</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <p class="testimonial-text">Okay I genuinely thought I was just bad at writing. Turns out I just needed someone to actually explain thesis structure to me instead of just marking it wrong. My professor commented on how much I improved. No notes.</p>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #CE93D8, #9C27B0);">CR</div>
+        <div>
+          <p class="testimonial-name">Cameron R.</p>
+          <p class="testimonial-detail">English Composition &bull; John Brown University</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <p class="testimonial-text">Chemistry was destroying my GPA and my confidence at the same time. My tutor broke down stoichiometry in a way that actually clicked. I went from a 58 on my midterm to an 87 on my final. StudyLynk is the real deal.</p>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #4A148C, #4DD0E1);">DS</div>
+        <div>
+          <p class="testimonial-name">Devon S.</p>
+          <p class="testimonial-detail">General Chemistry &bull; University of Arkansas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <p class="testimonial-text">I booked a session the night before my stats exam fully expecting to fail. We went through every concept I missed and I walked in the next morning actually confident. Passed with a 79. That is a miracle and a half.</p>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #CE93D8, #4DD0E1);">MK</div>
+        <div>
+          <p class="testimonial-name">Maya K.</p>
+          <p class="testimonial-detail">Statistics &bull; NorthWest Arkansas Community College</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <p class="testimonial-text">I am a first-gen student and I had no idea how to navigate college-level coursework. My tutor did not just help me with the material. They helped me believe I actually belonged here. That is worth more than any grade.</p>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #9C27B0, #CE93D8);">LV</div>
+        <div>
+          <p class="testimonial-name">Luis V.</p>
+          <p class="testimonial-detail">College Algebra &bull; University of Arkansas</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="testimonials-cta">
+    <p>Join hundreds of students who stopped struggling alone.</p>
+    <a href="#" onclick="openBookingModal(event)" class="btn-primary">Book Your Free Session</a>
+  </div>
+</section>
+
+<section class="workshops-teaser">
+  <div class="section-header">
+    <div class="eyebrow">Workshops &amp; Courses</div>
+    <h2>More Than Tutoring. <em>Real Skills.</em></h2>
+    <p style="max-width:640px; margin:1rem auto 0; color:#FFFFFF; font-size:1.05rem; line-height:1.8;">StudyLynk also offers workshops and courses open to anyone &mdash; not just enrolled students. Pick up a skill fast with a short workshop, or go deeper with a structured 2&ndash;3 week course. Taught by members of the StudyLynk team.</p>
+  </div>
+  <div class="workshop-explainer" style="margin-bottom:2.5rem;">
+    <div class="explainer-card">
+      <h4>What Is a Workshop?</h4>
+      <p>A short, focused, hands-on session &mdash; 2 hours to a full day. Come in, learn one skill, leave with something useful. No long commitment required.</p>
+      <p class="explainer-tag">2 hours &ndash; 1 full day</p>
+    </div>
+    <div class="explainer-card">
+      <h4>What Is a Course?</h4>
+      <p>A structured multi-session learning experience that runs over 2 to 3 weeks. Sessions build on each other so you go deeper into the subject over time.</p>
+      <p class="explainer-tag">2 &ndash; 3 weeks</p>
+    </div>
+  </div>
+  <div class="teaser-cards">
+    <div class="teaser-card">
+      <div class="teaser-icon">&#129302;</div>
+      <h4>AI &amp; Technology</h4>
+      <p>Intro to AI Tools, Web Design, Coding Basics, Digital Content Creation</p>
+      <span class="teaser-tag">Some Free</span>
+    </div>
+    <div class="teaser-card">
+      <div class="teaser-icon">&#128188;</div>
+      <h4>Business Skills</h4>
+      <p>QuickBooks, Resume Writing, Starting a Small Business</p>
+      <span class="teaser-tag">From $39</span>
+    </div>
+    <div class="teaser-card">
+      <div class="teaser-icon">&#127891;</div>
+      <h4>Academic Skills</h4>
+      <p>Study Strategies, College Prep, SAT/ACT Test Prep Bootcamp</p>
+      <span class="teaser-tag">Some Free</span>
+    </div>
+    <div class="teaser-card">
+      <div class="teaser-icon">&#128247;</div>
+      <h4>Creative Skills</h4>
+      <p>Photography Basics. Hands-on, in person, beginner friendly.</p>
+      <span class="teaser-tag">From $49</span>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:3rem;">
+    <a href="services.html#workshops" class="btn-primary">Browse All Workshops &amp; Courses</a>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2>Stop sitting in silence.<br><em>We are ready when you are.</em></h2>
+  <p>Your first consultation costs nothing. It is just a conversation. Tell us where you are and we will take it from there.</p>
+  <a href="#" onclick="openBookingModal(event)" class="btn-primary">Book Your Free Consultation</a>
+
+</section>
+
+<footer>
+  <div class="footer-contact">
+    <p>Phone: (479) 616-9465 &nbsp;|&nbsp; Email: <a href="mailto:studylynk@gmail.com">studylynk@gmail.com</a> &nbsp;|&nbsp; In Person &amp; Online</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="tutors.html">About StudyLynk</a></li>
+    <li><a href="impact.html">Impact</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-bottom">
+    <p>&copy; 2026 StudyLynk. All rights reserved. &nbsp;&bull;&nbsp; <a href="faq.html">FAQ</a> &nbsp;&bull;&nbsp; <a href="terms.html">Terms of Service</a> &nbsp;&bull;&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+</main>
+
+<div id="bookingOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(8,5,16,0.92); z-index:9999; overflow-y:auto; align-items:center; justify-content:center;">
+  <div style="background:#0B2545; border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:2.5rem; max-width:500px; width:92%; margin:auto; position:relative;">
+    <button onclick="closeBookingForm()" style="position:absolute; top:1rem; right:1.2rem; background:none; border:none; color:#FFFFFF; font-size:1.6rem; cursor:pointer; line-height:1;">&times;</button>
+
+    <h2 style="color:#FFFFFF; font-family:'Playfair Display',serif; font-size:1.6rem; margin-bottom:0.4rem;">Book a Free Consultation</h2>
+    <p style="color:#FFFFFF; font-size:0.88rem; margin-bottom:1.8rem;">No commitment. Just a conversation to find the right fit for you.</p>
+
+    
+    <div id="stepFormat">
+      <p style="color:#FFFFFF; font-size:0.9rem; margin-bottom:1rem; font-weight:600;">How would you like to meet?</p>
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+        <button onclick="pickFormat('phone')" style="flex:1; min-width:120px; padding:1rem 0.5rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:8px; color:#FFFFFF; cursor:pointer; font-size:0.9rem; transition:background 0.2s;">
+          ☎️<br><strong>Phone Call</strong><br><span style="font-size:0.78rem; color:#FFFFFF;">Talk with our team</span>
+        </button>
+        <button onclick="pickFormat('zoom')" style="flex:1; min-width:120px; padding:1rem 0.5rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:8px; color:#FFFFFF; cursor:pointer; font-size:0.9rem; transition:background 0.2s;">
+          💻<br><strong>Zoom</strong><br><span style="font-size:0.78rem; color:#FFFFFF;">Face-to-face online</span>
+        </button>
+        <button onclick="pickFormat('inperson')" style="flex:1; min-width:120px; padding:1rem 0.5rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:8px; color:#FFFFFF; cursor:pointer; font-size:0.9rem; transition:background 0.2s;">
+          📍<br><strong>In Person</strong><br><span style="font-size:0.78rem; color:#FFFFFF;">Bentonville, AR</span>
+        </button>
+      </div>
+    </div>
+
+    
+    <div id="stepDateTime" style="display:none;">
+      <p style="color:#FFFFFF; font-size:0.82rem; margin-bottom:1.2rem;">Format: <strong id="chosenFormat" style="color:#C9922A;"></strong></p>
+      <div style="margin-bottom:1.1rem;">
+        <label style="color:#FFFFFF; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Pick a Date</label>
+        <input id="bookingDate" type="date" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#FFFFFF; font-size:0.95rem; color-scheme:dark;">
+      </div>
+      <div style="margin-bottom:1.5rem;">
+        <label style="color:#FFFFFF; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Pick a Time</label>
+        <select id="bookingTime" style="width:100%; padding:0.7rem; background:#0B2545; border:1px solid rgba(255,255,255,0.12); border-radius:6px; color:#FFFFFF; font-size:0.95rem;">
+          <option value="">Select a time</option>
+          <option>9:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>12:00 PM</option>
+          <option>1:00 PM</option>
+          <option>2:00 PM</option>
+          <option>3:00 PM</option>
+          <option>4:00 PM</option>
+          <option>5:00 PM</option>
+        </select>
+      </div>
+      <button onclick="goToContact()" style="width:100%; padding:0.85rem; background:#C9922A; border:none; border-radius:6px; color:#FFFFFF; font-weight:700; font-size:1rem; cursor:pointer;">Continue &rarr;</button>
+    </div>
+
+    
+    <div id="stepContact" style="display:none;">
+      <p style="color:#FFFFFF; font-size:0.82rem; margin-bottom:1.2rem;">Almost done. Just need your info.</p>
+      <div style="margin-bottom:1rem;">
+        <label style="color:#FFFFFF; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Your Name</label>
+        <input id="bName" type="text" placeholder="Enter your name" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#FFFFFF; font-size:0.95rem;">
+      </div>
+      <div style="margin-bottom:1rem;">
+        <label style="color:#FFFFFF; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Email Address</label>
+        <input id="bEmail" type="email" placeholder="Enter your email" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#FFFFFF; font-size:0.95rem;">
+      </div>
+      <div style="margin-bottom:1.5rem;">
+        <label style="color:#FFFFFF; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Phone Number</label>
+        <input id="bPhone" type="tel" placeholder="Enter your phone number" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(255,255,255,0.2); border-radius:6px; color:#FFFFFF; font-size:0.95rem;">
+      </div>
+      <button onclick="submitBooking()" style="width:100%; padding:0.85rem; background:#C9922A; border:none; border-radius:6px; color:#FFFFFF; font-weight:700; font-size:1rem; cursor:pointer;">Confirm Consultation</button>
+    </div>
+
+    
+    <div id="stepDone" style="display:none; text-align:center; padding:1rem 0;">
+      <div style="font-size:2.5rem; margin-bottom:1rem;">✅</div>
+      <h3 style="color:#FFFFFF; font-family:'Playfair Display',serif; margin-bottom:0.75rem;">You're all set!</h3>
+      <p id="confirmMsg" style="color:#FFFFFF; font-size:0.95rem; line-height:1.7;"></p>
+      <button onclick="closeBookingForm()" style="margin-top:1.5rem; padding:0.75rem 2rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:6px; color:#FFFFFF; cursor:pointer; font-size:0.9rem;">Close</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/booking.js"></script>
+<script src="js/nav-dropdown.js"></script>
+</body>
+</html>
