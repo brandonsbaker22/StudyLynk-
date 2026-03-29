@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | StudyLynk</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet/styles.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html"><img src="images/StudyLynkLOGO.png" alt="StudyLynk Logo"></a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <button class="dropdown-chevron" aria-label="Toggle dropdown">&#9660;</button>
+        <div class="dropdown-menu">
+          <a href="services.html#pricing">Tutoring Pricing</a>
+          <a href="schedule.html">Schedule &amp; Availability</a>
+        </div>
+      </li>
+      <li><a href="tutors.html">Meet the Tutors</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<!-- Page Banner -->
+<section class="hero" style="min-height:280px;">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Get in Touch</p>
+    <h1>Contact <em>StudyLynk</em></h1>
+  </div>
+</section>
+
+<main>
+
+<section class="contact-page-wrap">
+
+  <p class="contact-page-intro">Have a question or ready to get started? Fill out the form below and we will get back to you within 24 hours.</p>
+
+  <div class="contact-two-col">
+
+    <!-- Contact Form -->
+    <div class="contact-form-box" id="contactFormWrap">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First name" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Your city" autocomplete="address-level2">
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" placeholder="72712" maxlength="5" autocomplete="postal-code">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is this about?">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit-btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info-box">
+      <h2>Contact Information</h2>
+
+      <h3>Email</h3>
+      <p><a href="mailto:studylynk@gmail.com" style="color: rgba(245,238,230,0.8); text-decoration: none;">studylynk@gmail.com</a></p>
+
+      <h3>Phone</h3>
+      <p>(479) 616-9465</p>
+
+      <h3>Availability</h3>
+      <p>Mon &ndash; Fri: 7:00am &ndash; 7:00pm<br>Sat: 7:00am &ndash; 2:00pm<br>Sun: Closed &mdash; available by email</p>
+
+      <h3>Response Time</h3>
+      <p>We typically respond within 24 hours.</p>
+
+      <h3>Location &amp; Service Area</h3>
+      <p>Bentonville, AR &mdash; sessions available in person or online via Zoom.</p>
+
+      <h3>How Scheduling Works</h3>
+      <p>All sessions are scheduled by consultation. Submit a request and a member of our team will follow up to confirm a time that works for you.</p>
+
+      <a href="#" onclick="openBookingModal(event)" class="contact-schedule-btn">Request a Free Consultation</a>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-contact">
+    <p>Phone: (479) 616-9465 &nbsp;|&nbsp; Email: <a href="mailto:studylynk@gmail.com">studylynk@gmail.com</a> &nbsp;|&nbsp; In Person &amp; Online</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="tutors.html">Meet the Tutors</a></li>
+    <li><a href="impact.html">Impact</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-bottom">
+    <p>&copy; 2026 StudyLynk. All rights reserved. &nbsp;&bull;&nbsp; <a href="terms.html">Terms of Service</a> &nbsp;&bull;&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<!-- Consultation Request Modal -->
+<div id="bookingOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(8,5,16,0.92); z-index:9999; overflow-y:auto; align-items:center; justify-content:center;">
+  <div class="booking-modal" style="background:#0B2545; border:1px solid rgba(201,146,42,0.3); border-radius:8px; padding:2.5rem; max-width:540px; width:90%; position:relative; margin:auto;">
+    <button onclick="closeBookingModal()" style="position:absolute; top:1rem; right:1.25rem; background:none; border:none; color:rgba(245,238,230,0.7); font-size:1.5rem; cursor:pointer;">&times;</button>
+    <h2 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:#C9922A; margin-bottom:0.25rem;">Request a Free Consultation</h2>
+    <p style="color:rgba(245,238,230,0.75); font-size:0.9rem; margin-bottom:1.75rem;">No commitment. Just a conversation. We will reach out to confirm a time.</p>
+
+    <!-- Step 1: Format -->
+    <div id="stepFormat">
+      <p style="font-size:0.85rem; color:rgba(245,238,230,0.75); text-transform:uppercase; letter-spacing:1px; margin-bottom:0.75rem;">Step 1 of 3 &mdash; How would you like to meet?</p>
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+        <button class="format-btn" onclick="selectFormat('In Person')" style="flex:1; padding:0.85rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:5px; color:#FFFFFF; cursor:pointer; font-size:0.95rem;">In Person</button>
+        <button class="format-btn" onclick="selectFormat('Online via Zoom')" style="flex:1; padding:0.85rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:5px; color:#FFFFFF; cursor:pointer; font-size:0.95rem;">Online via Zoom</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Preferred Availability -->
+    <div id="stepAvailability" style="display:none;">
+      <p style="font-size:0.85rem; color:rgba(245,238,230,0.75); text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Step 2 of 3 &mdash; When are you generally available?</p>
+      <p style="font-size:0.82rem; color:rgba(245,238,230,0.55); margin-bottom:1.1rem;">Select all that apply. We will use this to find a time that works for you.</p>
+
+      <div class="avail-group">
+        <span class="avail-group-label">Days</span>
+        <div class="avail-options">
+          <label class="avail-chip"><input type="checkbox" name="days" value="Monday"> Monday</label>
+          <label class="avail-chip"><input type="checkbox" name="days" value="Tuesday"> Tuesday</label>
+          <label class="avail-chip"><input type="checkbox" name="days" value="Wednesday"> Wednesday</label>
+          <label class="avail-chip"><input type="checkbox" name="days" value="Thursday"> Thursday</label>
+          <label class="avail-chip"><input type="checkbox" name="days" value="Friday"> Friday</label>
+          <label class="avail-chip"><input type="checkbox" name="days" value="Saturday"> Saturday</label>
+        </div>
+      </div>
+
+      <div class="avail-group">
+        <span class="avail-group-label">Time of Day</span>
+        <div class="avail-options">
+          <label class="avail-chip"><input type="checkbox" name="timeofday" value="Morning"> Morning (7am&ndash;12pm)</label>
+          <label class="avail-chip"><input type="checkbox" name="timeofday" value="Afternoon"> Afternoon (12pm&ndash;5pm)</label>
+          <label class="avail-chip"><input type="checkbox" name="timeofday" value="Evening"> Evening (5pm&ndash;7pm)</label>
+        </div>
+      </div>
+
+      <button onclick="goToContact()" style="width:100%; margin-top:0.5rem; padding:0.85rem; background:#C9922A; border:none; border-radius:4px; color:#FFFFFF; font-size:1rem; font-weight:600; cursor:pointer;">Next &rarr;</button>
+    </div>
+
+    <!-- Step 3: Contact Info -->
+    <div id="stepContact" style="display:none;">
+      <p style="font-size:0.85rem; color:rgba(245,238,230,0.75); text-transform:uppercase; letter-spacing:1px; margin-bottom:0.75rem;">Step 3 of 3 &mdash; Your info</p>
+      <input type="text" id="bookName" placeholder="Your full name" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:4px; color:#FFFFFF; font-size:0.95rem; margin-bottom:0.75rem; box-sizing:border-box;">
+      <input type="email" id="bookEmail" placeholder="Enter a valid email address" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:4px; color:#FFFFFF; font-size:0.95rem; margin-bottom:0.75rem; box-sizing:border-box;">
+      <input type="text" id="bookSubject" placeholder="Subject or topic (optional)" style="width:100%; padding:0.7rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:4px; color:#FFFFFF; font-size:0.95rem; margin-bottom:1.25rem; box-sizing:border-box;">
+      <button onclick="submitBooking()" style="width:100%; padding:0.85rem; background:#C9922A; border:none; border-radius:4px; color:#FFFFFF; font-size:1rem; font-weight:600; cursor:pointer;">Submit Request</button>
+    </div>
+
+    <!-- Done -->
+    <div id="stepDone" style="display:none; text-align:center; padding:1rem 0;">
+      <div style="font-size:2.5rem; margin-bottom:0.75rem;">&#10003;</div>
+      <h3 style="font-family:'Playfair Display',serif; color:#C9922A; margin-bottom:0.5rem;">Request Received!</h3>
+      <p style="color:rgba(245,238,230,0.8); font-size:0.95rem;">We will reach out within 24 hours to confirm a time that works for your schedule.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/nav.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/validation.js"></script>
+<script>
+function openBookingModal(event) {
+  if (event) event.preventDefault();
+  var overlay = document.getElementById("bookingOverlay");
+  overlay.style.display = "flex";
+  overlay.style.alignItems = "center";
+  overlay.style.justifyContent = "center";
+  document.getElementById("stepFormat").style.display = "block";
+  document.getElementById("stepAvailability").style.display = "none";
+  document.getElementById("stepContact").style.display = "none";
+  document.getElementById("stepDone").style.display = "none";
+}
+
+function closeBookingModal() {
+  document.getElementById("bookingOverlay").style.display = "none";
+}
+
+function selectFormat(format) {
+  document.getElementById("stepFormat").style.display = "none";
+  document.getElementById("stepAvailability").style.display = "block";
+}
+
+function goToContact() {
+  document.getElementById("stepAvailability").style.display = "none";
+  document.getElementById("stepContact").style.display = "block";
+}
+
+function submitBooking() {
+  var name = document.getElementById("bookName").value;
+  var email = document.getElementById("bookEmail").value;
+  if (!name || !email) {
+    alert("Please fill in your name and email before submitting.");
+    return;
+  }
+  document.getElementById("stepContact").style.display = "none";
+  document.getElementById("stepDone").style.display = "block";
+}
+</script>
+
+</body>
+</html>
