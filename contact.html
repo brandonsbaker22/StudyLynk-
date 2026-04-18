@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact StudyLynk for a free consultation. Request tutoring services in Bentonville, AR or online.">
 <title>Contact | StudyLynk</title>
+<link rel="icon" href="images/StudyLynkLOGO.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stylesheet/styles.css">
 </head>
@@ -13,7 +15,10 @@
 <nav>
   <div class="nav-container">
     <div class="nav-logo">
-      <a href="index.html"><img src="images/StudyLynkLOGO.png" alt="StudyLynk Logo"></a>
+      <a href="index.html" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+        <img src="images/StudyLynk1.png" alt="StudyLynk Logo">
+
+      </a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links" id="navLinks">
@@ -35,13 +40,14 @@
 </nav>
 </header>
 
+
 <!-- Page Banner -->
-<section class="hero" style="min-height:280px;">
+<section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-line"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Get in Touch</p>
-    <h1>Contact <em>StudyLynk</em></h1>
+    <div class="eyebrow">Get in Touch</div>
+    <p class="hero-sub">Contact <em style="color:var(--red-light); font-style:normal;">StudyLynk</em></p>
   </div>
 </section>
 
@@ -56,22 +62,24 @@
     <!-- Contact Form -->
     <div class="contact-form-box" id="contactFormWrap">
       <h2>Send Us a Message</h2>
-      <form id="contactForm" novalidate>
+      <form id="contactForm" novalidate aria-describedby="formHelp">
+        <div id="formErrors" class="form-errors" role="alert" aria-live="assertive" style="display:none"></div>
+        <div id="formStatus" aria-live="polite" class="form-status" style="display:none"></div>
 
         <div class="form-row">
           <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First name" autocomplete="given-name">
+            <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="firstName" name="firstName" placeholder="First name" autocomplete="given-name" required aria-required="true">
           </div>
           <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Last name" autocomplete="family-name">
+            <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" autocomplete="family-name" required aria-required="true">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email">
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required aria-required="true">
         </div>
 
         <div class="form-group">
@@ -81,12 +89,12 @@
 
         <div class="form-row">
           <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" placeholder="Your city" autocomplete="address-level2">
+            <label for="city">City <span aria-hidden="true">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Your city" autocomplete="address-level2" required aria-required="true">
           </div>
           <div class="form-group">
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="zip" placeholder="72712" maxlength="5" autocomplete="postal-code">
+            <label for="zip">ZIP Code <span aria-hidden="true">*</span></label>
+            <input type="text" id="zip" name="zip" placeholder="12345 or 12345-6789" inputmode="numeric" pattern="\d{5}(-\d{4})?" maxlength="10" autocomplete="postal-code" required aria-required="true">
           </div>
         </div>
 
@@ -101,6 +109,7 @@
         </div>
 
         <button type="submit" class="contact-submit-btn">Send Message</button>
+        <p id="formHelp" class="visually-hidden">Fields marked with * are required.</p>
       </form>
     </div>
 
@@ -109,19 +118,25 @@
       <h2>Contact Information</h2>
 
       <h3>Email</h3>
-      <p><a href="mailto:studylynk@gmail.com" style="color: rgba(245,238,230,0.8); text-decoration: none;">studylynk@gmail.com</a></p>
+      <p><a href="mailto:studylynktutors@gmail.com" style="color: rgba(245,238,230,0.8); text-decoration: none;">studylynktutors@gmail.com</a></p>
 
       <h3>Phone</h3>
       <p>(479) 616-9465</p>
 
       <h3>Availability</h3>
-      <p>Mon &ndash; Fri: 7:00am &ndash; 7:00pm<br>Sat: 7:00am &ndash; 2:00pm<br>Sun: Closed &mdash; available by email</p>
+      <p>Mon &ndash; Fri: 7:00am &ndash; 7:00pm<br>Sat: 7:00am &ndash; 2:00pm<br>Sun: Appointments only </p>
 
       <h3>Response Time</h3>
       <p>We typically respond within 24 hours.</p>
 
       <h3>Location &amp; Service Area</h3>
-      <p>Bentonville, AR &mdash; sessions available in person or online via Zoom.</p>
+      <p>Bentonville, AR or online via Zoom.</p>
+
+      <!-- Google Maps Embed -->
+      <div style="margin: 2rem 0;">
+        <iframe src="https://www.google.com/maps?q=1121+NW+H+Street,+Bentonville,+AR&output=embed" width="100%" height="400" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p style="font-size: 0.85rem; color: rgba(245,238,230,0.7); margin-top: 1rem; text-align: center;"><strong>StudyLynk</strong> | 1121 NW H Street, Bentonville, AR</p>
+      </div>
 
       <h3>How Scheduling Works</h3>
       <p>All sessions are scheduled by consultation. Submit a request and a member of our team will follow up to confirm a time that works for you.</p>
@@ -137,7 +152,7 @@
 
 <footer>
   <div class="footer-contact">
-    <p>Phone: (479) 616-9465 &nbsp;|&nbsp; Email: <a href="mailto:studylynk@gmail.com">studylynk@gmail.com</a> &nbsp;|&nbsp; In Person &amp; Online</p>
+    <p>Phone: (479) 616-9465 &nbsp;|&nbsp; Email: <a href="mailto:studylynktutors@gmail.com">studylynktutors@gmail.com</a> &nbsp;|&nbsp; In Person &amp; Online</p>
   </div>
   <ul class="footer-links">
     <li><a href="index.html">Home</a></li>
@@ -164,6 +179,7 @@
       <p style="font-size:0.85rem; color:rgba(245,238,230,0.75); text-transform:uppercase; letter-spacing:1px; margin-bottom:0.75rem;">Step 1 of 3 &mdash; How would you like to meet?</p>
       <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
         <button class="format-btn" onclick="selectFormat('In Person')" style="flex:1; padding:0.85rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:5px; color:#FFFFFF; cursor:pointer; font-size:0.95rem;">In Person</button>
+        <button class="format-btn" onclick="selectFormat('Phone')" style="flex:1; padding:0.85rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:5px; color:#FFFFFF; cursor:pointer; font-size:0.95rem;">Phone</button>
         <button class="format-btn" onclick="selectFormat('Online via Zoom')" style="flex:1; padding:0.85rem; background:#1A3A5C; border:1px solid rgba(201,146,42,0.4); border-radius:5px; color:#FFFFFF; cursor:pointer; font-size:0.95rem;">Online via Zoom</button>
       </div>
     </div>
@@ -219,39 +235,75 @@
 <script src="js/booking.js"></script>
 <script src="js/validation.js"></script>
 <script>
+var selectedConsultationFormat = null;
+
 function openBookingModal(event) {
   if (event) event.preventDefault();
   var overlay = document.getElementById("bookingOverlay");
   overlay.style.display = "flex";
-  overlay.style.alignItems = "center";
-  overlay.style.justifyContent = "center";
   document.getElementById("stepFormat").style.display = "block";
   document.getElementById("stepAvailability").style.display = "none";
   document.getElementById("stepContact").style.display = "none";
   document.getElementById("stepDone").style.display = "none";
+  selectedConsultationFormat = null;
+  document.body.style.overflow = "hidden";
 }
 
 function closeBookingModal() {
   document.getElementById("bookingOverlay").style.display = "none";
+  document.body.style.overflow = "";
+  // Reset form fields
+  document.getElementById("bookName").value = "";
+  document.getElementById("bookEmail").value = "";
+  document.getElementById("bookSubject").value = "";
+  document.querySelectorAll("input[name='days']:checked").forEach(function(cb) { cb.checked = false; });
+  document.querySelectorAll("input[name='timeofday']:checked").forEach(function(cb) { cb.checked = false; });
 }
 
 function selectFormat(format) {
+  selectedConsultationFormat = format;
   document.getElementById("stepFormat").style.display = "none";
   document.getElementById("stepAvailability").style.display = "block";
 }
 
 function goToContact() {
+  var daysChecked = document.querySelectorAll("input[name='days']:checked").length;
+  var timesChecked = document.querySelectorAll("input[name='timeofday']:checked").length;
+  
+  if (daysChecked === 0 || timesChecked === 0) {
+    alert("Please select at least one preferred day and time.");
+    return;
+  }
+  
   document.getElementById("stepAvailability").style.display = "none";
   document.getElementById("stepContact").style.display = "block";
 }
 
 function submitBooking() {
-  var name = document.getElementById("bookName").value;
-  var email = document.getElementById("bookEmail").value;
-  if (!name || !email) {
-    alert("Please fill in your name and email before submitting.");
+  var name = document.getElementById("bookName").value.trim();
+  var email = document.getElementById("bookEmail").value.trim();
+  
+  if (!name) {
+    alert("Please enter your full name.");
+    document.getElementById("bookName").focus();
     return;
   }
+  
+  if (!email) {
+    alert("Please enter your email address.");
+    document.getElementById("bookEmail").focus();
+    return;
+  }
+  
+  // Basic email validation
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    document.getElementById("bookEmail").focus();
+    return;
+  }
+  
+  // Show success message
   document.getElementById("stepContact").style.display = "none";
   document.getElementById("stepDone").style.display = "block";
 }
