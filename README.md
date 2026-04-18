@@ -1,37 +1,156 @@
-# StudyLynk-
-SignatureAssignment
-# StudyLynk - Project README
+# StudyLynk — Project README
 
-## Project Journey & Evolution
+## About This Project
 
-This project started as a standard assignment for my Web Design class, but as I began building it felt that it came up short and not as the verison I was aim for so as I started to build pages and look at the outline, I saw an opportunity to create something more engaging and professional than just a basic, static site. My initial wireframes were simple, but as I worked with the content and the design, I made several key changes to better serve the user and create a more polished final product.
-
-### The Evolution of the Design
-
-The look and feel of the site went through a few iterations. I initially experimented with a much brighter, more corporate color scheme, and then a very dark, stylized theme. Ultimately, I settled on the current palette of dark navy, gold, and cream because it felt more professional and academic, while still being warm and inviting.
-
-As I built out the pages, I also found that some of my initial structural ideas could be improved. For example, I originally planned for a very simple "About" page. However, I realized that focusing on the tutors themselves would be more compelling for potential students, so that page evolved into the "Meet the Tutors" (`tutors.html`) page, which gives each tutor their own story. Similarly, I decided to move the links for FAQ, Terms of Service, and Privacy Policy to the footer. This keeps the main navigation at the top of the page clean and focused on the most important user journeys, like finding services or contacting the team.
-
-A big part of the process was also a full readability audit. After building the initial pages, I went back through and realized that some of my text and background color combinations were difficult to read. I took the time to fix these issues across the entire site to make sure everything was accessible and clear for the user.
-
-### Page Overviews
-
-Here is a look at how each page functions within the site:
-
-*   **Home (`index.html`):** This is the front door to the site. It introduces the mission of StudyLynk, shows the faces of the team, and gives a high-level overview of the services offered. I wanted to establish trust and personality right away.
-
-*   **Services (`services.html`):** This page gets into the details. It breaks down the different tutoring options, workshops, and courses. I included a clear pricing table to be transparent with users. This page also originally had an FAQ section where the questions were hard to see, which I fixed by adjusting the text color to be visible at all times.
-
-*   **Meet the Tutors (`tutors.html`):** Instead of a generic "About" page, I gave each tutor their own section with a photo and a backstory. I felt it was important for students to connect with the people they would be learning from.
-
-*   **FAQ (`faq.html`):** As the site grew, I realized a dedicated FAQ page would be helpful. I added this page to provide a central place for users to find answers to common questions about tutoring, billing, and services. It uses a simple accordion script to keep the layout clean.
-
-*   **Contact (`contact.html`):** A straightforward contact page with a form and direct contact information. I initially had some readability issues here with light text on a light background, which I corrected by changing the panel backgrounds to navy to ensure the white text was clear.
-
-*   **Terms & Privacy (`terms.html`, `privacy.html`):** These are the standard legal pages. Like the contact page, I had to adjust the styling here from a dark-on-dark theme to a more readable light background with dark text to ensure they were accessible.
+StudyLynk is a tutoring service website built as a Signature Assignment for ITC 2400 Web Design. The site is designed to connect students in the Bentonville, AR area with tutors who offer personalized one-on-one and group study sessions, as well as field trips and hands-on learning experiences.
 
 ---
 
-## Future Updates
+## Site Structure
 
-I will update this section as the project goes on..
+```
+StudyLynk/
+├── index.html          — Homepage
+├── services.html       — Services & Pricing
+├── tutors.html         — Meet the Tutors
+├── impact.html         — Our Impact
+├── schedule.html       — Schedule & Availability (Support Services)
+├── contact.html        — Contact Us
+├── faq.html            — Frequently Asked Questions
+├── privacy.html        — Privacy Policy
+├── terms.html          — Terms of Service
+├── images/             — All site images
+├── js/                 — External JavaScript files
+│   ├── nav.js          — Hamburger menu and dropdown navigation
+│   ├── booking.js      — Consultation modal logic
+│   └── validation.js   — Contact form JavaScript validation
+└── stylesheet/
+    └── styles.css      — Main external stylesheet
+```
+
+---
+
+## Page Overviews
+
+**Home (`index.html`)**
+The front door to the site. Introduces the StudyLynk mission, highlights the three main offerings (1-on-1 tutoring, group sessions, beyond the classroom), and links to the tutors page. Designed to be simple and welcoming.
+
+**Services & Pricing (`services.html`)**
+Details the tutoring formats, subjects covered, pricing by grade level in a responsive table, and what is included with every session. No workshops or courses — tutoring only.
+
+**Meet the Tutors (`tutors.html`)**
+Introduces the founder Brandon Scott and each tutor with a short story and their subject focus. Ends with the "Meet the Bosses" section featuring the team's dogs.
+
+**Our Impact (`impact.html`)**
+Showcases student outcomes through stats, three testimonials, and the community outreach programs including field trips and hands-on learning.
+
+**Schedule & Availability (`schedule.html`)**
+Lists all support services in an ordered list format with hours and details in unordered lists inside each category. Uses image-styled checkmark bullets. This is one of the two pages required for Deliverables 3 and 4.
+
+**Contact (`contact.html`)**
+A detailed contact form with JavaScript validation including auto-capitalization of first name, last name, and city, plus zip code and email format validation. Also includes contact information and a multi-step consultation request modal. This is one of the two pages required for Deliverables 3 and 4.
+
+**FAQ (`faq.html`)**
+Accordion-style FAQ organized into four categories: Getting Started, Sessions & Scheduling, Pricing & Payment, and Policies.
+
+---
+
+## Deliverable Progress
+
+| Deliverable | Pages | Status |
+|-------------|-------|--------|
+| First | Site map and wireframes | Submitted |
+| Second | `index.html` + `services.html` + `styles.css` | Submitted |
+| Third | `contact.html` (HTML5 validation) + `schedule.html` (ordered/unordered lists) | Submitted |
+| **Final** | `contact.html` (JavaScript validation) + `schedule.html` (completed site) | **Due Apr 25** |
+
+---
+
+## Key Features
+
+- Fully responsive layout with CSS media queries for all screen sizes
+- Mobile hamburger navigation menu (external `js/nav.js`)
+- JavaScript form validation with uppercase conversion, zip validation, and email validation (`js/validation.js`)
+- Multi-step consultation request modal (`js/booking.js`)
+- Support services page with ordered list categories and image-styled unordered list bullets
+- Consistent nav and footer across all 9 pages
+- External stylesheet linked on every page
+- At least 5 HTML5 semantic elements on every page
+- Meta descriptions on all pages for SEO
+- Favicon branding across all pages
+- Accessible form validation with ARIA attributes
+- Responsive navbar fixed to top with proper content spacing
+
+---
+
+## Recent Improvements (April 2026)
+
+The following enhancements were made to improve UX, SEO, accessibility, and design:
+
+**Design & UX**
+- Reduced navbar height from 90px to 70px for a more compact header
+- Reduced logo size from 130px to 85px to match the smaller navbar
+- Added proper top padding to main content areas to prevent overlap with the fixed navbar
+- Updated navbar positioning on mobile to align with new height
+
+**SEO & Branding**
+- Added unique meta descriptions to all 9 pages (improves search engine visibility and social media previews)
+- Added favicon link on all pages (improves branding consistency)
+
+**Accessibility**
+- Enhanced form validation with ARIA attributes (`aria-invalid`, `aria-describedby`) for screen reader support
+
+**Content Updates**
+- Updated contact email across all pages to `studylynktutors@gmail.com`
+- Made all email instances clickable mailto links for better UX
+
+---
+
+## Design Notes
+
+The color scheme uses dark navy (`#0B2545`), gold (`#C9922A`), and cream (`#F5EEE6`) throughout the site. This palette was chosen to feel professional and academic while remaining warm and approachable for students and parents.
+
+All fonts are loaded from Google Fonts: Playfair Display for headings and DM Sans for body text.
+
+---
+
+## Next Steps (Final Deliverable — Due Apr 25)
+
+## Final Submission & Reflections
+
+### Project Evolution & Reflections
+
+Throughout the development of StudyLynk, the site has undergone significant improvements in both design and functionality. Early concepts were more ambitious and visually complex, but as the project progressed, careful choices were made to refine the user experience, simplify navigation, and focus on clarity and accessibility. Many pages were toned down from their initial designs to ensure the site remained approachable and easy to use for students, parents, and educators.
+
+Key decisions included:
+- Streamlining navigation and page layouts for consistency across all devices
+- Reducing visual clutter and focusing on essential content for each page
+- Enhancing accessibility with semantic HTML, ARIA attributes, and keyboard navigation
+- Prioritizing responsive design to ensure usability on mobile, tablet, and desktop
+- Choosing a professional yet warm color palette and typography for readability and trust
+- Adding real-world touches, like tutor stories and pet photos, to make the site more relatable
+
+### Site-wide Enhancements
+- Unique meta descriptions and favicon branding on every page
+- Consistent header and footer for seamless navigation
+- Multi-step modal for consultation requests, improving user engagement
+- Advanced JavaScript form validation for a smooth contact experience
+- Responsive images and layouts using Flexbox and Grid
+- Clear, accessible forms with real-time feedback and error handling
+- Smooth transitions and button animations for a polished feel
+- All links, images, and resources tested for reliability and correctness
+
+### Final Thoughts
+The process of building StudyLynk has been a valuable learning experience in balancing creativity with usability. Early ideas were refined through testing and feedback, leading to a site that is both visually appealing and highly functional. Every page was carefully considered to serve its purpose, and the final choices reflect a commitment to quality, accessibility, and user-centered design.
+
+The site is now complete, fully tested, and ready for submission. Thank you for reviewing my work!
+
+---
+
+The two pages being graded for the Final Deliverable are:
+
+1. **`contact.html`** — JavaScript form validation is already implemented. Fields validated: first name (auto-capitalize), last name (auto-capitalize), city (auto-capitalize), zip code (5-digit check), email (format check).
+
+2. **`schedule.html`** — Support services page with ordered list for major categories and unordered lists with image-styled bullets for hours and details inside each category.
+
+The full site must also be published to GitHub Pages before the final submission date.
