@@ -55,6 +55,18 @@ Accordion-style FAQ organized into four categories: Getting Started, Sessions & 
 
 ---
 
+## April 2026 Policy & Pricing Updates
+
+- **Pricing tables** on the Services page now show only straightforward hourly rates for each grade group (no bundles or savings columns).
+- **Terms of Service** link and policy statement are now displayed directly below the pricing tables for visibility.
+- **Field trips and special meetings:**
+  - For K–12 students, all off-site activities are coordinated with parents/guardians in advance. Most trips are scheduled for weekends or after school, with times arranged to fit parents’ schedules. Permission slips are required for students under 18.
+  - For college students, trips and special meeting dates are discussed and scheduled directly with the student at the time of session.
+- All banners and hero sections are now visually and structurally consistent across pages.
+- Font sizes and spacing have been standardized for improved readability and consistency.
+
+---
+
 ## Deliverable Progress
 
 | Deliverable | Pages | Status |
