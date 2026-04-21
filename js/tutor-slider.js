@@ -3,8 +3,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const cards = document.querySelectorAll('.tp-slider-track .tp-card');
   const leftBtn = document.querySelector('.tp-slider-arrow-left');
   const rightBtn = document.querySelector('.tp-slider-arrow-right');
+  const mobileLayout = window.matchMedia('(max-width: 768px)');
+
+  if (!track || !cards.length || !leftBtn || !rightBtn) {
+    return;
+  }
+
   let currentIndex = 0;
+
   function updateSlider() {
+    if (mobileLayout.matches) {
+      track.scrollLeft = 0;
+      leftBtn.disabled = true;
+      rightBtn.disabled = true;
+      return;
+    }
+
     const cardWidth = cards[0].offsetWidth + 24; // 24px gap
     track.scrollTo({ left: currentIndex * cardWidth, behavior: 'smooth' });
     leftBtn.disabled = currentIndex === 0;
@@ -22,5 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
       updateSlider();
     }
   });
+
+  mobileLayout.addEventListener('change', function() {
+    currentIndex = 0;
+    updateSlider();
+  });
+
   updateSlider();
 });
